@@ -16,12 +16,13 @@ app.get("/", (req, res) => {
 });
 
 
-app.post("/sugestao", (req, res) => {
-  if (!req.body.nome|| !req.body.ingredientes)
-    return res.redirect("/not-found");
+//Obs: Para que faça sentido a rota /sugestao, ela deve ser uma rota POST pois recebe os dados do formulário da página contato.html
+// app.post("/sugestao", (req, res) => {
+//   if (!req.body.nome|| !req.body.ingredientes)
+//     return res.redirect("/not-found");
 
-  res.status(200).redirect(`/sugestao?nome=${req.body.nome}&ingredientes=${req.body.ingredientes}`);
-});
+//   res.status(200).redirect(`/sugestao?nome=${req.body.nome}&ingredientes=${req.body.ingredientes}`);
+// });
 
 
 app.get("/sugestao", (req, res) => {
@@ -59,6 +60,7 @@ app.get("/sugestao", (req, res) => {
 });
 
 
+// O atributo assunto do formulário contém o assunto do contato
 app.get("/contato", (req, res) => {
   res.status(200).sendFile(path.join(__dirname, "views", "contato.html"));
 });
