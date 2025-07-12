@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 
 
 app.post("/sugestao", (req, res) => {
-  if (req.body.nome === undefined || req.body.ingredientes === undefined)
+  if (!req.body.nome|| !req.body.ingredientes)
     return res.redirect("/not-found");
 
   res.status(200).redirect(`/sugestao?nome=${req.body.nome}&ingredientes=${req.body.ingredientes}`);
