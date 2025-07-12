@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="/css/contato.css" />
+  </head>
+  <body>
+    <main>
+      <form action="/contato" method="POST">
+        <h1>Contate-nos</h1>
+        <img src="/images/logo.png" alt="" />
+        <div>
+          <label for="nome">Nome</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            required
+            placeholder="Digite o seu nome..."
+          />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Digite o seu email..."
+          />
+        </div>
+        <div>
+          <label for="assunto">Qual o assunto?</label>
+          <input
+            type="assunto"
+            name="assunto"
+            id="assunto"
+            required
+            placeholder="Digite o assunto..."
+          />
+        </div>
+
+        <div>
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            name="mensagem"
+            id="mensagem"
+            type="text"
+            required
+            placeholder="Digite a mensagem..."
+          ></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>

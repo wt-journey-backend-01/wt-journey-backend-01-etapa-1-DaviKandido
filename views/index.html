@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBurger</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+
+    <header class="site-header">
+        <h1 class="site-title"><span class="red">Dev</span>Burger 🍔 </h1>
+    </header>
+
+    <main>
+
+        <div class="sugestao-container">
+            <form action="/sugestao" method="POST">
+                <h1>Sugestão de novo item</h1>
+                <img src="/images/logo.png" alt="">
+                <div>
+                    <label for="nome">Nome do item</label>
+                    <input type="text" name="nome" id="nome" required placeholder="Digite o nome do novo item">
+                </div>
+                <div>
+                    <label for="ingredientes">Ingredientes necessarios</label>
+                    <textarea name="ingredientes" id="ingredientes" type="text" required placeholder="Digite os ingredientes do novo item"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div class="agradecimento center">
+                <p>Desenvolvendo o melhor para voce!</p>
+            </div>
+
+            <div class="agradecimento">
+                <h2>Obrigado por contribuir com a <span class="red">Dev<span class="yellow">Burger!</span></span></h2>
+                <p>Entre em contato conosco para saber mais sobre nossa equipe de desenvolvedores de sabores!</p>
+                <a href="/contato">
+                    <button type="button" id="contato" >Contate-nos</button>
+                </a>
+            </div>
+        </div>
+            
+        
+        <div class="Cardapio">
+            <h1>🍔 DevBurger - Cardápio</h1>
+            
+            <div class="item">
+                <h2>Classic DevBurger</h2>
+                <p>Pão brioche, 180g de carne artesanal, queijo cheddar, alface, tomate e molho especial da casa.</p>
+                <div class="preco">R$ 22,90</div>
+            </div>
+            
+            <div class="item">
+                <h2>Burger.js</h2>
+                <p>Pão australiano, carne smash 160g, queijo prato, cebola caramelizada e bacon crocante.</p>
+                <div class="preco">R$ 25,00</div>
+            </div>
+            
+            <div class="item">
+            <h2>Stack Overflow Burger</h2>
+            <p>Dois hambúrgueres 150g, queijo duplo, ovo, cebola roxa, maionese verde e muito bacon.</p>
+            <div class="preco">R$ 29,90</div>
+        </div>
+        
+        <div class="item">
+            <h2>Veggie Dev</h2>
+            <p>Hambúrguer de grão de bico, queijo vegano, rúcula, tomate e molho de mostarda e mel.</p>
+            <div class="preco">R$ 24,50</div>
+        </div>
+
+        <a href="/api/lanches">
+            <button type="button" id="contato" >Saiba-mais</button>
+        </a>
+    </div>
+</main>
+</body>
+</html>

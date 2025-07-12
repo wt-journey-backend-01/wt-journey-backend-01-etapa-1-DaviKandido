@@ -1,0 +1,30 @@
+{
+  "name": "wt-journey-backend-01-etapa-1-davikandido",
+  "version": "1.0.0",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/fO8pjV07) # Desafio: Protótipo de Cardápio Digital - DevBurger",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wt-journey-backend-01/wt-journey-backend-01-etapa-1-DaviKandido.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "api",
+    "DevBurger"
+  ],
+  "author": "Davi Cândido de Almeida",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/wt-journey-backend-01/wt-journey-backend-01-etapa-1-DaviKandido/issues"
+  },
+  "homepage": "https://github.com/wt-journey-backend-01/wt-journey-backend-01-etapa-1-DaviKandido#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

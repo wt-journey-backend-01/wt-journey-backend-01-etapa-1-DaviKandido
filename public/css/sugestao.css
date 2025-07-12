@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.yellow {
+  color: #ffd700;
+}
+
+.red {
+  color: #ff4500;
+}
+
+header {
+  background-color: black;
+  color: #ffd700;
+  height: 15vh;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.agradecimento {
+  background-color: #2b2b2b;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 69, 0, 0.3);
+  width: 90%;
+  max-width: 500px;
+  transition: transform 0.2s ease;
+  margin-bottom: 2rem;
+}
+
+.agradecimento:hover {
+  transform: scale(1.02);
+}
+
+.agradecimento img {
+  width: 8rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.agradecimento h1 {
+  color: #ffd700;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.agradecimento p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.agradecimento a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #ff4500;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.agradecimento a:hover {
+  background-color: #e03d00;
+}
